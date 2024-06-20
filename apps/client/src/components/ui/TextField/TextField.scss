@@ -1,0 +1,43 @@
+@import '../../../styles/abstracts/index';
+
+.textfield {
+  position: relative;
+  &--md {
+    input {
+      height: 4rem;
+    }
+  }
+
+  &.rounded-full {
+    input {
+      border-radius: 2.5rem;
+    }
+  }
+  label {
+    margin-bottom: $spacing * 0.5;
+    @include text($text-field-label, null, 14px);
+    small {
+      float: right;
+      margin-bottom: $spacing * 0.5;
+    }
+  }
+
+  input {
+    background-color: $white;
+    @include text($text-primary, null, 13px);
+    height: 3.2rem;
+  }
+  &__error {
+    @include flex(left, center);
+    @include text($error, 400, 14px);
+    letter-spacing: 0.8px;
+    svg {
+      fill: $error;
+      margin-right: $spacing * 2;
+      path {
+        fill: $error;
+        stroke: $error;
+      }
+    }
+  }
+}

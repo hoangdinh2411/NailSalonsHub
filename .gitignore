@@ -1,0 +1,51 @@
+# Dependency directories
+node_modules/
+.yarn/*
+!.yarn/cache
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+# Testing
+coverage
+q
+# macOS configuration files
+.DS_Store
+
+# Visual Studio Code Configuration Files
+*.vscode
+
+# Debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environtment variables
+.env
+.env.*
+!.env.example
+config.js
+
+# NestJS
+dist
+
+# SvelteKit
+build
+.svelte-kit
+package
+
+# Turborepo 
+.turbo
+
+# Lint cache
+.eslintcache
+
+# Swagger
+swagger.json
+docs.html
+
+# Nats Credentials
+*.creds
+
+# API Documentation
+apidoc/

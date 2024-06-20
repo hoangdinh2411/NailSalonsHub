@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 1 */
+  font-family: $font-family;
+  color: $text-primary;
+  /* 2 */
+  line-height: 1.6;
+  /* 2 */
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: $app_bg;
+}

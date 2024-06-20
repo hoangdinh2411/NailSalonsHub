@@ -1,0 +1,27 @@
+@import '../../styles/abstracts/index';
+
+.components {
+  background-color: $white;
+  padding: $spacing * 4;
+  border-radius: $spacing;
+  > h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__items {
+    @include grid(1, auto, $spacing * 4);
+
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $border-faint;
+    > p {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .item__boxes {
+      @include grid(repeat(2, 1fr), auto, 1.6rem);
+    }
+  }
+}

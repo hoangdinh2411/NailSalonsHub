@@ -1,0 +1,40 @@
+$app_color_active: $blue-70;
+$app_bg: $warm_gray_20;
+
+$text-primary: $black-90;
+$text-light: $black-60;
+
+$btn-bg: $white;
+$btn-primary-bg-active: rgba(112, 181, 249, 0.15);
+$btn-text-primary: $blue-70;
+$btn-border-primary: $blue-70;
+$btn-border-primary-active: $blue-70;
+$btn-secondary-bg-active: $gray_faint;
+$btn-border-secondary: $black-70;
+$btn-text-secondary: $black-70;
+$btn-border-secondary-active: inset 0 0 0 2px $black-70;
+$btn-contained-bg: $blue-70;
+$btn-contained-bg-active: $blue-80;
+
+$card-bg: $white;
+$card-border: $black-90;
+$shadow:
+  rgba(0, 0, 0, 0.15) 0px 0px 0px 1px,
+  rgba(0, 0, 0, 0.2);
+
+$border-faint: $gray_faint;
+
+//textfield
+$text-field-bg: $white;
+$text-field-border: $black-30;
+$text-field-border-active: $black-90;
+$text-field-label: $black-60;
+
+$error: $red-70;
+
+//modal
+
+$modal_overlay_bg: $black_50;
+
+//loading
+$loading-bg: $blue-70;

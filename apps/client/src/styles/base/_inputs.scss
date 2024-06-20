@@ -1,0 +1,23 @@
+fieldset {
+  border: none;
+  outline: none;
+}
+
+input {
+  border-radius: 4px;
+  overflow: hidden;
+  border: $text-field-border 1px solid;
+  outline: none;
+  padding: $spacing * 1.5 $spacing * 2;
+  @include transition(border-color 0.1s ease-out);
+  width: 100%;
+  margin-bottom: 0px;
+  &:focus-within,
+  &:hover {
+    border-color: $text-field-border-active;
+  }
+}
+
+label {
+  display: block;
+}

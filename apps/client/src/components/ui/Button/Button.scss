@@ -1,0 +1,48 @@
+@import '../../../styles/abstracts/index';
+
+.btn {
+  min-width: 10rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: $btn-bg;
+  border-width: 1px;
+  border-style: solid;
+  @include flex(center, center);
+  &--primary {
+    border-color: $btn-border-primary;
+    @include text($btn-text-primary, 600, 1.6rem);
+    &:hover {
+      border-width: 2px;
+      background-color: $btn-primary-bg-active;
+    }
+  }
+
+  &--secondary {
+    border-color: $btn-border-secondary;
+    @include text($btn-text-secondary, 600, 1.6rem);
+    &:hover {
+      border-width: 2px;
+      background-color: $btn-secondary-bg-active;
+    }
+  }
+
+  &--contained {
+    background-color: $btn-contained-bg;
+    @include text($white, 600, 1.6rem);
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: $btn-contained-bg-active;
+    }
+  }
+
+  &--sm {
+    height: 3.2rem;
+    padding: $spacing * 1.5 $spacing * 4;
+  }
+  &--md {
+    height: 3.4rem;
+    padding: 0 $spacing * 4;
+  }
+}
